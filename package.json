@@ -9,7 +9,7 @@
     "format:check": "prettier . --check",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "echo 'No tests yet' && exit 0",
+    "test": "echo 'No tests yet'",
     "prepare": "husky"
   },
   "author": "Vighnesh",
