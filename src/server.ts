@@ -5,9 +5,8 @@ function Welcome(name: string) {
         name: 'vighnesh',
     }
 
-    const u1 = user[name]
-
-    return u1
+    const u = user.name
+    console.log(u)
 }
 
 Welcome('hello')
