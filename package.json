@@ -9,7 +9,7 @@
     "format:check": "prettier . --check",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "echo 'No tests yet'",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
   "author": "Vighnesh",
@@ -19,8 +19,15 @@
     "@types/node": "^22.13.5",
     "eslint": "^9.23.0",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "prettier": "3.5.3",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.28.0"
+  },
+  "Lint-staged": {
+    "*.ts": [
+      "npm run format:fix",
+      "npm run lint:fix"
+    ]
   }
 }
